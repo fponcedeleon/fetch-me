@@ -1,0 +1,22 @@
+{
+  "name": "fetch-me",
+  "version": "0.0.0",
+  "private": true,
+  "description": "HTTP server to ensure the requests from consumers work as expected.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "jest": "^27.4.7",
+    "node-fetch": "2.6.1"
+  }
+}
