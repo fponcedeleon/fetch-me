@@ -1,8 +1,10 @@
-require("dotenv").config();
-const http = require("http");
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const server = require("./server");
 
-/** Server */
-const httpServer = http.createServer(server);
 const PORT = process.env.PORT ?? 6060;
-httpServer.listen(PORT, () => console.log(`runinng on port ${PORT}`));
+server.listen(PORT, function () {
+  console.log(`Listening on Port ${PORT}`);
+});
